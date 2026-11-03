@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Rohr Colombi | Portfólio Acadêmico & Profissional</title>
+    
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fundo de Partículas em Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="code-bracket">&lt;</span>Matheus Rohr<span class="code-bracket">/&gt;</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#perfil" class="nav-link active"><i class="fa-solid fa-user-circle"></i> Perfil</a></li>
+            <li><a href="#dados-pessoais" class="nav-link"><i class="fa-solid fa-address-card"></i> Dados</a></li>
+            <li><a href="#formacao" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Formação</a></li>
+            <li><a href="#descricao" class="nav-link"><i class="fa-solid fa-file-invoice"></i> Sobre</a></li>
+            <li><a href="#experiencia" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experiência</a></li>
+        </ul>
+    </nav>
+
+    <!-- Secção Hero / Perfil -->
+    <header id="perfil" class="hero-section">
+        <div class="hero-content">
+            <div class="profile-card">
+                <h2>Foto de perfil</h2>
+                <div class="profile-img-wrapper">
+                    <img src="perfil.png" alt="Foto de Matheus Rohr Colombi" class="foto-perfil">
+                    <div class="status-badge" title="Disponível para emprego fixo">
+                        <span class="status-dot"></span> Disponível para Oportunidades
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-text">
+                <span class="greeting-tag">Olá, bem-vindo ao meu Portfólio!</span>
+                <h1>Matheus Rohr Colombi</h1>
+                <h3 class="typing-container">
+                    Eu atuo em <span id="typing-text"></span><span class="cursor">&nbsp;</span>
+                </h3>
+                <p class="hero-summary">
+                    Técnico em Eletrotécnica & Académico de Engenharia Elétrica combinando conhecimentos de hardware, redes, eletrónica e desenvolvimento de software.
+                </p>
+                <div class="hero-actions">
+                    <a href="#dados-pessoais" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Contactar</a>
+                    <a href="#formacao" class="btn btn-outline"><i class="fa-solid fa-book-open"></i> Ver Formação</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+
+        <!-- 1. Dados Pessoais -->
+        <section id="dados-pessoais" class="card-section">
+            <div class="section-header">
+                <i class="fa-solid fa-id-card section-icon"></i>
+                <h2>1. Dados Pessoais</h2>
+            </div>
+            <div class="personal-grid">
+                <div class="info-box">
+                    <i class="fa-solid fa-user info-icon"></i>
+                    <div>
+                        <span class="info-label">Nome Completo</span>
+                        <strong class="info-val">Matheus Rohr Colombi</strong>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <i class="fa-solid fa-phone info-icon"></i>
+                    <div>
+                        <span class="info-label">Telefone / WhatsApp</span>
+                        <strong class="info-val"><a href="https://wa.me/5527998724287" target="_blank">(27) 99872-4287</a></strong>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <i class="fa-solid fa-envelope info-icon"></i>
+                    <div>
+                        <span class="info-label">E-mail</span>
+                        <strong class="info-val"><a href="mailto:matheusrohr.hs@gmail.com">matheusrohr.hs@gmail.com</a></strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Conteúdo / Formação Académica -->
+        <section id="formacao" class="card-section">
+            <div class="section-header">
+                <i class="fa-solid fa-graduation-cap section-icon"></i>
+                <h2>2. Conteúdo (Formação Académica)</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag tag-progress">Cursando • 4º Período de 8</span>
+                        <h3>Ensino Superior em Engenharia Elétrica</h3>
+                        <p>Faculdade Cruzeiro do Sul — Formação em sistemas elétricos, programação avançada e engenharia de energia.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag tag-progress">Cursando • 2º Módulo de 3</span>
+                        <h3>Curso Técnico em Informática</h3>
+                        <p>CEET Vasco Coutinho — Foco em redes, manutenção de sistemas, programação, HTML/CSS/JS e bases de dados.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag tag-complete">Concluído</span>
+                        <h3>Técnico em Eletrotécnica</h3>
+                        <p>Colégio Arnulpho Mattos — Instalações elétricas residenciais/industriais, comandos elétricos e manutenção.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-tag tag-complete">Concluído</span>
+                        <h3>Ensino Médio</h3>
+                        <p>Formação secundária regular completa com foco em exatas e tecnologia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Descrição -->
+        <section id="descricao" class="card-section">
+            <div class="section-header">
+                <i class="fa-solid fa-user-gear section-icon"></i>
+                <h2>3. Descrição & Perfil Profissional</h2>
+            </div>
+            <div class="description-content">
+                <p>
+                    Sou um jovem de 20 anos com forte perfil analítico e prático. Possuo conhecimento técnico e prático consolidado em <strong>Eletrotécnica</strong> (abrangendo todas as grandes áreas da distribuição, comandos e eletrónica) e estou em busca de um <strong>emprego fixo</strong>.
+                </p>
+                <p>
+                    Além da base sólida em infraestrutura elétrica, ofereço <strong>conhecimentos avançados em informática</strong>, incluindo montagem e manutenção de hardware, infraestrutura de redes, programação (Python, C#, SQL, HTML, CSS, JavaScript) e produtividade com ferramentas digitais.
+                </p>
+                <div class="badges-group">
+                    <span class="skill-badge"><i class="fa-solid fa-bolt"></i> Eletrotécnica</span>
+                    <span class="skill-badge"><i class="fa-solid fa-laptop-code"></i> Informática Avançada</span>
+                    <span class="skill-badge"><i class="fa-solid fa-microchip"></i> Hardware & Redes</span>
+                    <span class="skill-badge"><i class="fa-solid fa-code"></i> Lógica de Programação</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Experiência -->
+        <section id="experiencia" class="card-section">
+            <div class="section-header">
+                <i class="fa-solid fa-wrench section-icon"></i>
+                <h2>4. Experiência Prática</h2>
+            </div>
+            <div class="experience-box">
+                <div class="exp-icon-wrapper">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <div class="exp-details">
+                    <h3>Projetos e Instalações Práticas</h3>
+                    <p>
+                        Auxílio ativo no desenvolvimento de projetos elétricos, realização de instalações residenciais/prediais e manutenção preventiva e corretiva de circuitos domésticos e laboratoriais no ambiente escolar e técnico.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Matheus Rohr Colombi. Desenvolvido com HTML5, CSS3 & JavaScript Puro.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
